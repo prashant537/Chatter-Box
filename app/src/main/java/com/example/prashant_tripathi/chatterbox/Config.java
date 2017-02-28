@@ -4,11 +4,11 @@ package com.example.prashant_tripathi.chatterbox;
  * Created by Prashant_Tripathi on 28-09-2016.
  */
 public class Config {
-    public static final String URL_INSERT="http://192.168.223.1/ChatterBox/Register.php";
-    public static final String URL_ALL_USERS="http://192.168.223.1/ChatterBox/ChatRoom.php?user=";
-    public static final String URL_GET_USER="http://192.168.223.1/ChatterBox/Login.php?user=";
-    public static final String URL_MESSAGE="http://192.168.223.1/ChatterBox/Messages.php";
-    public static final String URL_LOAD_MESSAGES="http://192.168.223.1/ChatterBox/ListMessages.php?sender=";
+    public static final String URL_INSERT="http://192.168.0.106/ChatterBox/Register.php";
+    public static final String URL_ALL_USERS="http://192.168.0.106/ChatterBox/ChatRoom.php?user=";
+    public static final String URL_GET_USER="http://192.168.0.106/ChatterBox/Login.php?user=";
+    public static final String URL_MESSAGE="http://192.168.0.106/ChatterBox/Messages.php";
+    public static final String URL_LOAD_MESSAGES="http://192.168.0.106/ChatterBox/ListMessages.php?sender=";
     // public static final String URL_UPDATE_EMP="http://100.73.140.166/Android/CRUD/updateEmp.php";
     //  public static final String URL_DELETE_EMP="http://100.73.140.166/Android/CRUD/deleteEmp.php?id=";
 
