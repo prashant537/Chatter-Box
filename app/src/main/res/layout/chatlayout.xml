@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ListView
+        android:id="@+id/chathead_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transcriptMode="alwaysScroll"
+        android:layout_above="@+id/chat_divider"
+        android:padding="0dip"
+        android:divider="@null"
+        android:dividerHeight="0dp" android:stackFromBottom="true"/>
+
+    <RelativeLayout
+        android:id="@+id/chat_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#fffafafa"
+        android:layout_above="@+id/chathead_send" />
+
+    <RelativeLayout
+        android:id="@+id/chathead_send"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:layout_alignParentBottom="true">
+
+
+        <EditText
+            android:layout_marginBottom="-4dp"
+            android:id="@+id/chat_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Type Text ..."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/chathead_send_button"
+            android:background="@android:color/white"
+            android:layout_alignBottom="@+id/chathead_send_button"
+            android:layout_toLeftOf="@+id/chathead_send_button"/>
+
+        <Button
+            android:id="@+id/chathead_send_button"
+            android:layout_width="72dp"
+            android:text="SEND"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:onClick="ButtonClickedSendMessage"
+            android:background="@drawable/button2" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
